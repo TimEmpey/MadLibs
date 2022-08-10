@@ -9,16 +9,21 @@ window.onload = function() {
     const verbInput = document.getElementById("verbInput").value;
     const nounInput = document.getElementById("nounInput").value;
 
-    // sets stroy variables from form
-    document.querySelector("span#person1a").innerText = person1Input;
-    document.querySelector("span#person1b").innerText = person1Input;
-    document.querySelector("span#person1c").innerText = person1Input;
-    document.querySelector("span#person2a").innerText = person2Input;
-    document.querySelector("span#person2b").innerText = person2Input;
+
+    //turns names to all caps
+    
+
+    // sets story variables from form
+    document.querySelector("span#person1a").innerText = person1Input.toUpperCase();
+    document.querySelector("span#person1b").innerText = person1Input.toUpperCase();
+    document.querySelector("span#person1c").innerText = person1Input.toUpperCase();
+    document.querySelector("span#person2a").innerText = person2Input.toUpperCase();
+    document.querySelector("span#person2b").innerText = person2Input.toUpperCase();
     document.querySelector("span#animal").innerText = animalInput;
     document.querySelector("span#verb").innerText = verbInput;
     document.querySelector("span#noun").innerText = nounInput;
     document.querySelector("span#exclamation").innerText = exclamationInput;
+
 
     document.querySelector("div#story").removeAttribute("class");
 
